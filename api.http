@@ -1,0 +1,23 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "NLW Unite",
+    "details": "Um evento para quem é apaixonado por programação",
+    "maximumAttendees": 100
+}
+
+###
+POST http://localhost:3333/events/{eventId}/attendees
+Content-Type: application/json
+
+{
+    "name": "Cauê Vieira",
+    "email": "cauevcaetano@gmail.com",
+}
+
+###
+GET http://localhost:3333/events/{eventId}
+
+###
+GET http://localhost:3333/attendees/{attendeesId}/badge
