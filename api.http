@@ -8,16 +8,22 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3333/events/{eventId}/attendees
+POST http://localhost:3333/events/1c297acb-8730-470d-878c-110a468dc93b/attendees
 Content-Type: application/json
 
 {
     "name": "Cauê Vieira",
-    "email": "cauevcaetano@gmail.com",
+    "email": "cauevcaetano@gmail.com"
 }
 
 ###
-GET http://localhost:3333/events/{eventId}
+GET http://localhost:3333/events/1c297acb-8730-470d-878c-110a468dc93b
 
 ###
 GET http://localhost:3333/attendees/{attendeesId}/badge
+
+###
+GET http://localhost:3333/attendees/{attendeesId}/check-in
+
+###
+GET http://localhost:3333/events/{eventId}/attendees?query=diego
